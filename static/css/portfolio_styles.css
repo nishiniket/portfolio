@@ -104,7 +104,7 @@ header nav {
 }
 
 /* Second section*/
-#personal_projects {
+#overview {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -112,7 +112,7 @@ header nav {
     /*flex-direction: column;*/
 }
 
-/*#personal_projects > div {
+/*#overview > div {
     border: 1px solid #ccc;
 }*/
 .box {
@@ -138,6 +138,22 @@ header nav {
     font-size: 16px;
     text-align: justify;
     text-justify: auto;
+}
+
+/* Grid View*/
+#grid_wrapper {
+    display: grid;
+    /*
+    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    */
+    grid-gap: 1em;
+    /*grid-auto-rows: 100px;*/
+    grid-auto-rows: minmax(100px, auto);
+}
+#grid_wrapper .grid_box1, .grid_box2, .grid_box3, .grid_box4 {
+    border: 1px solid black;
 }
 
 /*Footer*/
