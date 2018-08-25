@@ -28,6 +28,10 @@ ul {
     color: #e8491d;
 }
 
+.contact_detail {
+    font-size: 150%;
+}
+
 
 /*Header*/
 header {
@@ -58,17 +62,39 @@ header a:active {
 }
 
 header li {
-    float: left;
+    display: block;
     list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid #e8491d;
 }
 
 header #branding {
-    float: left;
+    display: block;
+    border-bottom: 3px solid #e8491d;
 }
 
 header nav {
-    float: right;
+    display: block;
     margin-top: 15px;
+}
+
+@media screen and (min-width: 623px) {
+    header #branding {
+        float: left;
+    }
+    header nav {
+        float: right;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    header li {
+        float: left;
+        border: none;
+    }
+    header #branding {
+        border: none;
+    }
 }
 
 /* Main Content*/
@@ -79,6 +105,8 @@ header nav {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    position: relative;
+    top: 0;
 }
 
 .hero_text {
@@ -116,7 +144,7 @@ header nav {
     border: 1px solid #ccc;
 }*/
 .box {
-    flex-basis: 33%;
+    flex-basis: 100%;
 }
 .fw_icon {
     text-align: center;
@@ -140,21 +168,106 @@ header nav {
     text-justify: auto;
 }
 
+@media screen and (min-width: 800px) {
+     .box {
+        flex-basis: 33%;
+    }
+}
+
 /* Grid View*/
 #grid_wrapper {
     display: grid;
     /*
     grid-template-columns: 25% 50% 25%;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    justify-items: (stretch, start, center, end)--> options to justify grid boxes column wise (justify-self for individual boxes)
+    align-items: (stretch, start, center, end)--> options to justify grid boxes row wise (align-self for individual boxes)
     */
+    grid-template-columns: 1fr;
     grid-gap: 1em;
-    /*grid-auto-rows: 100px;*/
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: 400px;
+    /*grid-auto-rows: minmax(400px, auto);*/
+    margin: 10px;
 }
-#grid_wrapper .grid_box1, .grid_box2, .grid_box3, .grid_box4 {
-    border: 1px solid black;
+#grid_wrapper .grid_box1 {
+    background-image: url("../img/odoo_banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+#grid_wrapper .grid_box2 {
+    background-image: url("../img/hire_odoo_dev.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#grid_wrapper #grid_box3 {
+    grid-column: 1/5;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #e8491d;
+    overflow: auto;
+}
+
+th, td {
+    border: 1px solid #e8491d;
+    padding: 10px;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: powderblue;
+}
+#grid_wrapper .grid_box4 {
+    background-image: url("../img/odoo_api.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#grid_wrapper #contact_us {
+    padding: 10px;
+    grid-column: 1/5;
+}
+#contact_us .my_img {
+    border: 1px solid #e8491d;
+    border-radius: 50%;
+    width: 20%;
+    height: 100%;
+    background-image: url("../img/my_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#contact_us > div {
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 1680px) {
+    #grid_wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #grid_wrapper .grid_box1 {
+        grid-column: 1/3;
+    }
+    #grid_wrapper .grid_box2 {
+        grid-column: 3/5;
+    }
+    #grid_wrapper #grid_box3 {
+        grid-column: 1/4;
+    }
+    #grid_wrapper .grid_box4 {
+        grid-column: 4/5;
+    }
+}
+
+@media screen and (min-width: 1300px;) {
+    #contact_us > div {
+        float: left;
+    }
+}
+
 
 /*Footer*/
 footer {
@@ -164,21 +277,37 @@ footer {
     border-top: 3px solid #e8491d;
     min-height: 50px;
     margin: 0;
-    position: sticky;
+    position: fixed;
     bottom: 0;
-
     width: 100%;
 }
 footer .copyright {
     float: left;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 footer .social_media {
     float: right;
+    margin-top: 3px;
 }
 footer .social_media i {
-    font-size: 40px;
+    font-size: 30px;
     color: #ffffff;
-    margin: 5px 10px;
+    margin: 3px 3px;
+}
+
+@media screen and (min-width: 410px) {
+    footer .social_media i {
+        font-size: 40px;
+        color: #ffffff;
+        margin: 5px 10px;
+    }
+    footer .social_media {
+        float: right;
+    }
+    footer .copyright {
+        float: left;
+        padding: 10px;
+        margin-top: 5px;
+    }
 }
