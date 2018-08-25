@@ -262,7 +262,7 @@ tr:nth-child(even){
     }
 }
 
-@media screen and (min-width: 1300px;) {
+@media screen and (min-width: 1300px) {
     #contact_us > div {
         float: left;
     }
