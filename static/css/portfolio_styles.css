@@ -40,11 +40,9 @@ header {
     padding-left : 10px;
     border-bottom: 3px solid #e8491d;
     min-height: 70px;
-    margin: 0;
     position: sticky;
     top: 0;
     z-index: 1;
-    width: 100%;
 }
 
 header a {
@@ -291,14 +289,14 @@ footer .social_media {
     margin-top: 3px;
 }
 footer .social_media i {
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
-    margin: 3px 3px;
+    margin: 10px 3px;
 }
 
 @media screen and (min-width: 410px) {
     footer .social_media i {
-        font-size: 40px;
+        font-size: 30px;
         color: #ffffff;
         margin: 5px 10px;
     }

@@ -11,146 +11,137 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1><span class="highlight">My</span> Portfolio</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#hero_image">Home</a></li>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#grid_box3">Projects</a></li>
-                        <li><a href="#contact_us">Contact Me</a></li>
-                    </ul>
-                </nav>
+        <header class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero_image">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#grid_box3">Projects</a></li>
+                    <li><a href="#contact_us">Contact Me</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <section>
-            <div id="hero_image">
-                <div class="hero_text">
-                    <h1 style="font-size:55px">Hi, I am Niket Nishi</h1>
-                    <p style="font-size:20px">And I'm a Software Developer</p>
-                    <button>Hire me</button>
+        <section id="hero_image">
+            <img src="../img/software_dev.jpg" width="100%">
+            <div class="hero_text">
+                <h1 style="font-size:55px">Hi, I am Niket Nishi</h1>
+                <p style="font-size:20px">And I'm a Software Developer</p>
+                <button>Hire me</button>
+            </div>
+        </section>
+
+        <section id="overview">
+            <div class="box">
+                <div class="fw_icon">
+                    <i class="fa fa-github-square"></i>
+                </div>
+                <div class="fw_icon_desc">
+                    <h1>I'm a full-stack coder</h1>
+                    <p>I design and develop enterprise applications in a variety of languages including but not limited to Python, JavaScript and SQL. I work to make sure everything is integrated on the enterprise scale.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="fw_icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="fw_icon_desc">
+                    <h1>Odoo Consultant</h1>
+                    <p>I have worked with the Open ERP i.e. Odoo since Dec 2017 and primarily do programming and integrations with external systems.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="fw_icon">
+                    <i class="fa fa-bolt"></i>
+                </div>
+                <div class="fw_icon_desc">
+                    <h1>I'm agile</h1>
+                    <p>I worked on projects using the Open ERP methodology at varying degrees and work with others to use the methology effectively.</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div id="overview">
-                <div class="box">
-                    <div class="fw_icon">
-                        <i class="fa fa-github-square"></i>
-                    </div>
-                    <div class="fw_icon_desc">
-                        <h1>I'm a full-stack coder</h1>
-                        <p>I design and develop enterprise applications in a variety of languages including but not limited to Python, JavaScript and SQL. I work to make sure everything is integrated on the enterprise scale.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="fw_icon">
-                        <i class="fa fa-users"></i>
-                    </div>
-                    <div class="fw_icon_desc">
-                        <h1>Odoo Consultant</h1>
-                        <p>I have worked with the Open ERP i.e. Odoo since Dec 2017 and primarily do programming and integrations with external systems.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="fw_icon">
-                        <i class="fa fa-bolt"></i>
-                    </div>
-                    <div class="fw_icon_desc">
-                        <h1>I'm agile</h1>
-                        <p>I worked on projects using the Open ERP methodology at varying degrees and work with others to use the methology effectively.</p>
-                    </div>
+        <section id="grid_wrapper">
+            <div class="grid_box1"></div>
+            <div class="grid_box2"></div>
+            <div id="grid_box3">
+                <div>
+                    <h1>My Projects</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S/No.</th>
+                                <th>Project Name</th>
+                                <th>Description</th>
+                                <th>Project Context</th>
+                                <th>Language Used</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Page Replacement Algorithm Simulator</td>
+                                <td>Memory management algorithm</td>
+                                <td>Final Year Project</td>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Super Mario Game</td>
+                                <td>Game</td>
+                                <td>Peopleclick Techno Solutions Pvt. Ltd.</td>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>WorthIT</td>
+                                <td>Designed API and the associated reports based on the models</td>
+                                <td>Madhu Infotech India Pvt. Ltd.</td>
+                                <td>Python, XHTML, CSS3, Odoo</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Retail Shop Manager</td>
+                                <td>It is an Odoo API based on Point of sale manages and generates pdf reports for filing GST</td>
+                                <td>Self</td>
+                                <td>Python, XHTML, CSS3, Odoo</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>My Portfolio</td>
+                                <td>It is a normal html css webpage.</td>
+                                <td>Mountblue Technologies Pvt. Ltd.</td>
+                                <td>HTML5, CSS3</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </section>
-
-        <section>
-            <div id="grid_wrapper">
-                <div class="grid_box1"></div>
-                <div class="grid_box2"></div>
-                <div id="grid_box3">
-                    <div>
-                        <h1>My Projects</h1>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>S/No.</th>
-                                    <th>Project Name</th>
-                                    <th>Description</th>
-                                    <th>Project Context</th>
-                                    <th>Language Used</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Page Replacement Algorithm Simulator</td>
-                                    <td>Memory management algorithm</td>
-                                    <td>Final Year Project</td>
-                                    <td>Java</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Super Mario Game</td>
-                                    <td>Game</td>
-                                    <td>Peopleclick Techno Solutions Pvt. Ltd.</td>
-                                    <td>Python</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>WorthIT</td>
-                                    <td>Designed API and the associated reports based on the models</td>
-                                    <td>Madhu Infotech India Pvt. Ltd.</td>
-                                    <td>Python, XHTML, CSS3, Odoo</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Retail Shop Manager</td>
-                                    <td>It is an Odoo API based on Point of sale manages and generates pdf reports for filing GST</td>
-                                    <td>Self</td>
-                                    <td>Python, XHTML, CSS3, Odoo</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>My Portfolio</td>
-                                    <td>It is a normal html css webpage.</td>
-                                    <td>Mountblue Technologies Pvt. Ltd.</td>
-                                    <td>HTML5, CSS3</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="grid_box4"></div>
-                <div id="contact_us">
-                    <div class="my_img"></div>
-                    <div class="my_detail">
-                        <h1 style="font-size: 3vw;margin-bottom: 0;display: inline-block;">Niket Nishi</h1>
-                        <span style="font-size: 2vw;vertical-align: middle;">(Software Developer)</span>
-                        <div class="contact_detail">
-                            <span><strong>e-mail</strong>: niketnishi@gmail.com</span><br/>
-                            <span><strong>Mob.:</strong> 9560652791 / 9709411493</span>
-                        </div>
+            <div class="grid_box4"></div>
+            <div id="contact_us">
+                <div class="my_img"></div>
+                <div class="my_detail">
+                    <h1 style="font-size: 3vw;margin-bottom: 0;display: inline-block;">Niket Nishi</h1>
+                    <span style="font-size: 2vw;vertical-align: middle;">(Software Developer)</span>
+                    <div class="contact_detail">
+                        <span><strong>e-mail</strong>: niketnishi@gmail.com</span><br/>
+                        <span><strong>Mob.:</strong> 9560652791 / 9709411493</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <div class="container">
-                <div class="copyright">
-                    <span>&copy; 2018 All Rights Reserved</span>
-                </div>
-                <div class="social_media">
-                    <a href="https://www.facebook.com/niket.nishi" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                    <a href="https://twitter.com/niket_nishi" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                    <a href="https://www.linkedin.com/in/niket-nishi-928b707a/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                </div>
+        <footer class="container">
+            <div class="copyright">
+                <span>&copy; 2018 All Rights Reserved</span>
+            </div>
+            <div class="social_media">
+                <a href="https://www.facebook.com/niket.nishi" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://twitter.com/niket_nishi" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/niket-nishi-928b707a/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
             </div>
         </footer>
     </body>
